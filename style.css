@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+*:focus{
+    outline: none;
+}
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.titlebar{
+    background-color:rgb(245, 244, 244);
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.titlebar ul li{
+    position: absolute;
+    right: 2%;
+    display: inline-block;
+    list-style: none;
+    margin-top: 10px;
+}
+.titlebar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.b1{
+    margin-right: 85px;
+    margin-top: 9px;
+    width: 80px;
+    height: 42px;
+    background-color:rgb(43, 4, 80);
+    font-weight: bold;
+    border-radius: 5%;
+    font-size: 18px;
+
+}
+.b2
+{
+    margin-top: 9px;
+    width: 75px;
+    height: 42px;
+    font-weight: bold;
+    border-radius: 5%;
+    font-size: 18px;
+    background-color:rgb(43, 4, 80);
+}
+.titlebar img{
+    height: 60px;
+    width: 110px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.titlebar ul li .b1:hover{
+    background-color: rgb(140, 12, 226);
+}
+.titlebar ul li .b2:hover{
+    background-color: rgb(140, 12, 226);
+}
+.menubar{
+    background-color: rgb(43, 4, 80);
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+.menubar ul{
+    width: 100%;
+    height: 60px;
+    display: inline-flex;
+    list-style: none;
+}
+.menubar ul li{
+    width: 12%;
+    padding: 15px;
+}
+.menubar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+.menubar ul li:hover{
+    background: rgb(140, 12, 226);
+}
+.search{
+    background-color: rgb(172, 237, 233);
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+}
+.search h1{
+    margin-left: 28%;
+    margin-right: 28%;
+    padding-top: 28px;
+    font-size: 30px
+}
+input[type="text"]{
+    display: block;
+    box-sizing: border-box;
+    width: 50%;
+    height: 40px;
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    transition: 0.2s ease;
+    font-size: 16px;
+    color: black;
+}
+input[type="text"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.1s ease;
+  color: black;
+}
+input[type="submit"]{
+    width: 150px;
+    height: 45px;
+    margin-left: 40%;
+    font-size: large;
+    background-color: rgb(43, 4, 80);
+    color: white;
+    border-radius:2%;
+    margin-top: 5px;
+}
+input[type="submit"]:hover{
+    background-color:  rgb(140, 12, 226);
+}
+.job{
+    height: 250px;
+    margin-top: 75px;
+    width: 80%;
+    display: flex;
+    margin-left: 20%;
+}
+.job img{
+    height: 180px;
+    margin-right: 20px;
+}
+.bottom{
+    background-color: rgb(43, 4, 80);
+    width: 100%;
+    height: 400px;
+    margin-top: 60px;
+}
+.bottom img{
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.left{
+    position: absolute;
+    left: 30%;
+}
+.middle{
+    position: absolute;
+    left: 50%;
+}
+.right{
+    position: absolute;
+    left: 75%;
+}
+.left ul,.middle ul,.right ul{
+    list-style: none;
+}
+.left ul li ,.middle ul li,.right ul li{
+   padding: 3px;
+}
+.left ul li a,.middle ul li a,.right ul li a{
+    text-decoration: none;
+    color: rgb(203, 200, 195);
+}
+.left ul li a:hover,.right ul li a:hover,.middle ul li a:hover{
+    color: red;
+}
+.bottom p{
+    margin-top: 260px;
+    width: 80%;
+    margin-left: 10%;
+    color:rgb(203, 200, 195);
+}

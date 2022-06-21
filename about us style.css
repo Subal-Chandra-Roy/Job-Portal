@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.top{
+    background-color:rgb(245, 244, 244);
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.top img{
+    height: 60px;
+    width: 110px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.top button{
+    margin: 25px;
+    border: none;
+    height: 30px;
+    width: 100px;
+    background-color:rgb(43, 4, 80);
+    border-radius: 3%;
+}
+.top button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+.top button:hover{
+    background-color:rgb(140, 12, 226);
+}
+.mid1{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(172, 237, 233);
+}
+.mid1 h1{
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 10px;
+}
+.mid1 h2{
+    text-align: center;
+    font-weight: normal;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+}
+.mid2{
+    width: 100%;
+    height: 400px;
+}
+.mid2 img{
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+.mid2 p{
+    margin: 25px;
+    font-size: 20px;
+}
+.mid3{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(172, 237, 233);
+    margin-top: 40px;
+}
+.mid3 h1{
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 30px;
+    font-weight: 300;
+}
+.bottom{
+    background-color: rgb(43, 4, 80);
+    width: 100%;
+    height: 400px;
+}
+.bottom img{
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.left{
+    position: absolute;
+    left: 40%;
+}
+.middle{
+    position: absolute;
+    left: 60%;
+}
+.right{
+    position: absolute;
+    left: 80%;
+}
+.left ul,.middle ul,.right ul{
+    list-style: none;
+}
+.left ul li ,.middle ul li,.right ul li{
+   padding: 3px;
+}
+.left ul li a,.middle ul li a,.right ul li a{
+    text-decoration: none;
+    color: rgb(203, 200, 195);
+}
+.left ul li a:hover,.right ul li a:hover,.middle ul li a:hover{
+    color: red;
+}
+.bottom p{
+    margin-top: 260px;
+    width: 80%;
+    margin-left: 10%;
+    color:rgb(203, 200, 195);
+}
