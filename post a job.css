@@ -1,0 +1,60 @@
+*{
+    background-color: rgb(239, 235, 235);
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.job{
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    height: 650px;
+    width:70%;
+    padding: 30px;
+}
+form,input,p,select,option{
+    background-color: white;
+}
+h1{
+    background-color: rgb(30, 150, 66);
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    font-weight: 150;
+    text-align: center;
+    padding: 10px;
+    margin-top: -10px;
+}
+input{
+    width: 500px;
+    border:none;
+    outline: none;
+    border-bottom: 2px solid #16a085;
+    color: #16a085;
+    transition: 0.1s ease;
+    color: black;
+}
+p{
+    font-size: 20px;
+    font-weight: 500;
+}
+select{
+    width: 500px;
+    height: 30px;
+    border: 1px solid#16a085;
+    border-bottom: 2px solid #16a085;
+}
+input[type="submit"]{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 150px;
+    height: 35px;
+    width: 200px;
+    border: none;
+    background-color: rgb(30, 150, 66);
+    
+}
+input[type="submit"]:hover{
+    background-color:  rgb(13, 244, 82);
+}

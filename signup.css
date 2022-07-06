@@ -2,25 +2,21 @@ body{
     background-color: rgb(172, 237, 233);
     font-family: sans-serif;
 }
-.login{
+.sign_up{
     width:360px;
-    height:350px;
+    height:550px;
     background-color: white;
     margin: auto;
     margin-top: 100px;;
     border-radius: 4px;
 }
-form{
-    margin-left: 20px;
-    width: 300px;
-}
 h1{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
 }
-p{
-    text-align: center;
-    font-size: 18px;
+form{
+    width: 300px;
+    margin-left: 20px;
 }
 form label{
     display: flex;
@@ -45,4 +41,8 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
     background-color:  rgb(140, 12, 226);
+}
+.sign_up p{
+    font-size: 18px;
+    text-align: center;
 }

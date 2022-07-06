@@ -37,7 +37,8 @@
     background-color:rgb(140, 12, 226);
 }
 .a{
-    background-color: rgb(172, 237, 233);
+    /*background-color: rgb(172, 237, 233);*/
+    background-color: whitesmoke;
 }
 .t{
     padding-top: 50px;
@@ -51,9 +52,9 @@ ol{
 ol li{
     padding-top: 15px;
     margin-right: 20px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-    color:rgb(199, 22, 22);
+    color:black;
 }
 ol li p{
     font-size: 18px;
