@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +12,16 @@
 </head>
 <body>
     <div class="login">
+        <?php
+            if(isset($_SESSION['invalid'])){
+              ?>
+                <script>
+                    alert("Invalid 'email' or 'password'");
+                </script>
+                <?php 
+                unset($_SESSION['invalid']);
+            }
+        ?>
         <h1>Log in</h1>
         <form action="login_core.php" method ="post">
             <label>Email</label>
@@ -16,7 +29,7 @@
             <label>Password</label>
             <input type="password" name="password" id="password" required>
             <input type="submit" value="Login">
-            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            <p>Don't have an account? <a href="signup.php">Sign up</a></p>
         </form>
     </div>
 </body>

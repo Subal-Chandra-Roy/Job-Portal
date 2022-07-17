@@ -1,0 +1,202 @@
+*{
+    font-family: sans-serif;
+}
+.title{
+    height: 100px;;
+    width: 100%;;
+    background-color: rgb(5, 5, 118);
+    margin-top: -8px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.title p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 0px;
+}
+#home{
+    background-color: rgb(5, 5, 118);
+    color: white;
+    border:1px solid white;
+    margin-top: -80px;
+    margin-right: 20px;
+    height: 50px;
+    width: 70px;
+    float: right;
+    font-size: 17px;
+}
+#home:hover{
+    background-color: blue;
+}
+.title img{
+    height: 60px;
+    width: 110px;
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+}
+.title{
+position: -webkit-sticky;
+}
+.resume{
+    display: flex;
+}
+.left{
+    background-color: rgb(221, 220, 220);
+    float: left;
+    width: 40%;
+    height:1350px;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+.right{
+    background-color: rgb(221, 220, 220);
+    float: right;
+    width: 60%;
+    height:1200px;
+    margin-left: 10px;
+    padding-right: 20px;
+}
+.left-top{
+    width: 30%;
+    background-color: rgb(5, 5, 118);
+    height: 850px;
+}
+.top
+{
+    display: flex;
+    background-color: rgb(4, 146, 146);
+    height: 190px;
+    margin-top: -820px;
+    margin-left: 50px;
+    border: 7px solid white;
+}
+.personal_info p{
+    color: rgb(232, 229, 229);
+    font-size: 14px;
+    margin-left: 60px;
+    margin-bottom: -5px;
+}
+#name{
+    font-size: 30px;
+}
+
+.top img{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 75px;
+}
+.lf{
+    float: left;
+    background-color: rgb(5, 5, 118);
+    width:30%;
+    height: 966px;
+}
+.lf h1{
+    color: rgb(196, 193, 193);
+    margin-left: 50px;
+    padding-top: 50px;
+    font-size: 23px;
+}
+.lf p{
+    color: rgb(196, 193, 193);
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.rt{
+    float: right;
+    width: 70%;
+}
+.rt p{
+    margin-left: 28px;
+}
+.rt h1{
+    background-color: rgb(4, 146, 146);
+    color: rgb(232, 229, 229);
+    font-size: 25px;
+    margin-left: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: fit-content;
+}
+.rt p{
+    margin-left: 25px;
+}
+.education{
+    margin-left: 500px;
+}
+.left input{
+    margin: 1px;
+}
+.button{
+    margin-left: -100px;
+}
+.bottom{
+    background-color: rgb(43, 4, 80);
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+}
+.bottom img{
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.left2{
+    position: absolute;
+    left: 30%;
+}
+.middle2{
+    position: absolute;
+    left: 50%;
+}
+.right2{
+    position: absolute;
+    left: 75%;
+}
+.left2 ul,.middle2 ul,.right2 ul{
+    list-style: none;
+}
+.left2 ul li ,.middle2 ul li,.right2 ul li{
+   padding: 3px;
+}
+.left2 ul li a,.middle2 ul li a,.right2 ul li a{
+    text-decoration: none;
+    color: rgb(203, 200, 195);
+}
+.left2 ul li a:hover,.right2 ul li a:hover,.middle2 ul li a:hover{
+    color: red;
+    font-size: 18px;
+}
+.bottom p{
+    margin-top: 260px;
+    width: 80%;
+    margin-left: 10%;
+    color:rgb(203, 200, 195);
+}
+#button{
+    background-color: rgb(5, 5, 118);
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-weight: bold;
+    font-size: large;
+}
+#button:hover{
+    background-color: blue;
+}
+#submit{
+    background-color: rgb(5, 5, 118);
+    width: 200px;
+    height: 30px;
+    color: white;
+    margin-left: 10%;
+    font-size: 17px;
+    font-weight: bold;
+}
+#submit:hover{
+    background-color: blue;
+}

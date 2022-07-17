@@ -10,7 +10,7 @@
 <body>
     <div class="top">
         <img src="logo.png" alt="logo">
-        <button> <a href="index.html">Go to Home</a></button>
+        <button> <a href="index.php">Go to Home</a></button>
    </div>
    <div class="mid1">
        <h1>Hi, we're Jobs.</h1>
@@ -24,12 +24,12 @@
        <h1>For more than 20 years, we've remained committed to providing the best experience for job seekers and employers.</h1>
    </div>
    <div class="bottom">
-    <img src="logo.png" alt="logo">
+    <a href="index.php"> <img src="logo.png" alt="logo"></a>
     <div class="left">
          <ul>
-            <li><a href="about us.html">About us</a></li>
-            <li><a href="Work with us.html">Work with us</a></li>
-            <li><a href="get in touch.html">Get in touch</a></li>
+            <li><a href="about us.php">About us</a></li>
+            <li><a href="Work with us.php">Work with us</a></li>
+            <li><a href="get in touch.php">Get in touch</a></li>
         </ul>
     </div>
     <div class="middle">
@@ -40,7 +40,7 @@
     </div>
     <div class="right">
         <ul>
-            <li><a href="career advice.html">Career Advice</a></li>
+            <li><a href="career advice.php">Career Advice</a></li>
             <li><a href="#">Get job in Bd</a></li>
         </ul>
     </div>

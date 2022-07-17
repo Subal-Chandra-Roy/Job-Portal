@@ -9,15 +9,15 @@
 </head>
 <body>
     <div class="top">
-        <a href="index.html"><img src="logo.png" alt="logo"></a>
-        <button> <a href="index.html">Go to Home</a></button>
+        <a href="index.php"><img src="logo.png" alt="logo"></a>
+        <button> <a href="index.php">Go to Home</a></button>
    </div>
    <div class="a">
    <div class=" t">
     <p style="font-size: 40px;font-weight: bold;font-family: sans-serif;">30 Best Pieces of Career Advice</p>
     <p style="font-size: 20px;">By Jobs Editorial Team</p><br>
     <p style="font-size: 18px;">As you continue developing in your career, you will probably come into contact with many pieces of career advice. It is helpful to think of career advice like feedback. You can read some pieces of advice and confirm what you do well and what you should continue to develop. Here are our best pieces of career advice no one ever told you:</p>
-</div>
+   </div>
     <ol>
         <li>Venture outside of your comfort <p>When you try new things, you prepare yourself for your next role. You may consider taking on new and difficult tasks that you aren't comfortable with to expand your skill set.</p></li>
         <li>View every person you meet as a door that may lead you to a new <p>You never know how a person can add to your life professionally or personally if you don't give them a chance. Your job may be a for-now job, but that doesn't mean that the connections you make with the people there won't be forever. It is best to view each person as valuable and worthy of your time and consideration.</p> </li>
@@ -52,12 +52,12 @@
     </ol>
 </div>
     <div class="bottom">
-        <img src="logo.png" alt="logo">
+        <a href="index.php"><img src="logo.png" alt="logo"></a>
         <div class="left">
              <ul>
-                <li><a href="about us.html">About us</a></li>
-                <li><a href="#">Work with us</a></li>
-                <li><a href="get in touch.html">Get in touch</a></li>
+                <li><a href="about us.php">About us</a></li>
+                <li><a href="work with us.php">Work with us</a></li>
+                <li><a href="get in touch.php">Get in touch</a></li>
             </ul>
         </div>
         <div class="middle">
@@ -68,7 +68,7 @@
         </div>
         <div class="right">
             <ul>
-                <li><a href="career advice.html">Career Advice</a></li>
+                <li><a href="career advice.php">Career Advice</a></li>
                 <li><a href="#">Get job in Bd</a></li>
             </ul>
         </div>

@@ -95,6 +95,7 @@ ol li p{
 }
 .left ul li a:hover,.right ul li a:hover,.middle ul li a:hover{
     color: red;
+    font-size: 18px;
 }
 .bottom p{
     margin-top: 260px;

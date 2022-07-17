@@ -1,0 +1,93 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.admin{
+    display: flex;
+}
+.left{
+    width: 15%;
+    height: 755px;
+    background-color: rgb(3, 26, 126); 
+    /*color: rgb(214, 211, 211);*/
+    margin-right: 50px;
+}
+.left p{
+    padding-top: 10px;
+    height: 50px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    border: .5px solid rgb(190, 189, 189);
+
+}
+.left p:hover{
+    background-color:rgb(14, 61, 230);
+}
+h2{
+    margin-left: 25%;
+    margin-top: -15px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    height: 60px;
+    width: 35%;
+    margin: 20px;
+    margin-left: 45px;
+}
+
+.rquest{
+    width: 70%;
+}
+h1{
+    background-color:rgb(3, 26, 126); 
+    height: 60px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    margin-right: 0;
+}
+
+td,th{
+    background-color: green;
+    height: 50px;
+    width: 180px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+}
+th{
+    font-size: 20px;
+}
+input{
+    background-color: green;
+    border: 1px;
+    color: white;
+    font-size: 20px;
+}
+#logout{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(3, 26, 126); 
+    border:1px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+#logout:hover{
+    background-color: rgb(14, 61, 230);
+}
