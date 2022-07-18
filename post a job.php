@@ -14,9 +14,46 @@ if(!isset($_SESSION['email'])){
     <link rel="stylesheet" href="post a job.css">
 </head>
 <body>
+<?php
+    
+    if(isset($_SESSION['upload'])){
+        unset($_SESSION['upload']);
+        ?>
+        <script>
+            alert("Successfully submited the  job post\nYour post will be uploaded within 24 hours");
+        </script>
+        <?php
+    }
+    if(isset($_SESSION['size'])){
+        unset($_SESSION['size']);
+        ?>
+        <script>
+            alert("Pdf size is too large");
+        </script>
+        <?php
+    }
+    if(isset($_SESSION['not_pdf'])){
+        unset($_SESSION['not_pdf']);
+        ?>
+        <script>
+            alert("Please select a Pdf file");
+        </script>
+        <?php
+    }
+    if(isset($_SESSION['error'])){
+        unset($_SESSION['error']);
+        ?>
+        <script>
+            alert("An unknown error occured");
+        </script>
+        <?php
+    }
+    ?>
     <div class="job">
-        <form action="post a job core.php" method="post" enctype="multipart/form-data">
-            <h1>Please fill out the following form to post a job</h1>
+        <h1>Please fill out the following form to post a job</h1>
+        <a href="index.php"> <button id="btn">Home</button></a>
+        <form action="post a job core.php" method="POST" enctype="multipart/form-data">
+            
             <p>Company/Institute Name:</p>
             <input type="text" name="company_name" placeholder="company name" required>
             <p>Email:</p>
@@ -40,9 +77,9 @@ if(!isset($_SESSION['email'])){
                 
             </select>
             <p>Job Location:</p>
-            <input type="text" name="location" placeholder="location">
+            <input type="text" name="location" placeholder="location" required>
             <p>Job Description(.pdf):</p>
-            <input type="file" name="job_description">
+            <input type="file" name="job_description" required>
             <br>
             <input type="submit" name="submit">
         </form>

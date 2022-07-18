@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     include("dbconnection.php");
     if(isset($_REQUEST['submit'])){
         $company_name = $_REQUEST['company_name'];
@@ -16,9 +16,11 @@
         $pdf_ex=pathinfo($job_description,PATHINFO_EXTENSION);
     
 
-        if($error===0){
-            if($pdf_size>125000){
-                echo "pdf size is too large";
+        if($error==0){
+            if($pdf_size>5242880){//5MB
+                $_SESSION['size']="true";
+                header("Location:post a job.php");
+
             }else{
                 $pdf_ex=pathinfo($job_description,PATHINFO_EXTENSION);
                 if($pdf_ex=="pdf"){
@@ -27,14 +29,17 @@
                     move_uploaded_file($tmp_name,$pdf_upload_path);
                     $sql = "INSERT INTO request_for_job_post(company_name,email,category,job_title,job_nature,job_location,job_description) VALUES('$company_name','$email','$category','$job_title','$job_nature','$job_location','$new_pdf_name')";
                     $run = mysqli_query($conn,$sql);
-                    header("Location:post  a job submit success.php");
+                    $_SESSION['upload']="true";
+                    header("Location:post a job.php");
                 }
                 else{
-                    echo "please choose a pdf file";
+                    $_SESSION['not_pdf']="true";
+                    header("Location:post a job.php");
                 }
             }
         }else{
-            echo "Unknown error occured";
+            $_SESSION['error']="true";
+            header("Location:post a job.php");
         }
     }
     else{

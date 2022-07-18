@@ -2,7 +2,7 @@
     include("dbconnection.php");
     $company_name = "";
     $job_title = "";
-    $location = "";
+    $location = "none";
     $category ='';
     $sql="";
     $run="";
@@ -48,18 +48,30 @@
         
         <?php
             if(isset($_REQUEST['search'])){
-                if($_REQUEST['category']=='All'){
+            if(isset($_REQUEST['location'])){
+                $location=$_REQUEST['location'];
+                $category=$_REQUEST['category'];
+                ?>
+                <p margin-left="80px"><?php echo "You search for category: (".$category.") and location: (".$location.")";?></p>
+                <?php
+                if($category=="All"){
+                    $sql="SELECT * FROM available_job_post WHERE job_location LIKE '%$location%'";
+                }
+                else{
+                    $sql="SELECT * FROM available_job_post WHERE job_location LIKE '%$location%' AND category='$category'";
+                }
+            }
+            else{
+                $category=$_REQUEST['category'];
+                if($category=="All"){
                     $sql="SELECT * FROM available_job_post";
                 }
                 else{
-                    $str=$_REQUEST['category'];
-                    $sql="SELECT * FROM available_job_post WHERE category='$str'";
+                    $sql="SELECT * FROM available_job_post WHERE category='$category'";
                 }
-                
             }
-            else{
-                $sql="SELECT * FROM available_job_post";
-            }
+        }
+            else $sql="SELECT * FROM available_job_post";
             $run=mysqli_query($conn,$sql);
             if($run){
                 //echo "Available post's for ".'"'.$_REQUEST['category'].'"'."<br><br>";
@@ -72,16 +84,19 @@
                     ?>
                     <div class="card">
                     <br>
-                    <p style="font-size: 20px;font-weight:bold;"><?php echo ($job_title)." [".($job_nature)."]" ?></p>
-                    <p style="font-size: 20px;"><?php echo ($company_name) ?></p>
+                    <p style="font-size: 21px;font-weight:bold;"><?php echo ($job_title)." [".($job_nature)."]" ?></p>
+                    <p style="font-size: 19px;"><?php echo ($company_name) ?></p>
                     
                     <p><?php echo ($location) ?></p>
                     <a href="job_details.php?name=<?php echo($data['job_description']);?>"><p id='details'>Details</p></a>
                     </div>
                     <?php
                 }
-                if($count==0)
-                    echo "No job post is availble for ".'"'.$_REQUEST['category'].'" category';
+                if($count==0){
+                ?>
+                   <p margin-left="80px"><?php echo "No job post is availble for these search"; ?></p> 
+                <?php
+                }
             }
         ?>
     </div>
@@ -90,7 +105,7 @@
         <br><br><br><br><br><br><br><br><br>
         <h1>Get noticed by top employers!</h1>
         <p>Do you want to speed up your job search? Post your resume on JOBS and let employers know you’re open to opportunities. Plus, receive relevant job recommendations in your inbox.</p>
-        <a href="#"><button id="upload">Upload Your Resume</button></a>
+        <a href="upload resume.php"><button id="upload">Upload Your Resume</button></a>
     </div>
 
 

@@ -28,7 +28,9 @@
         $sql = "INSERT INTO user_info (username,fname,lname,email,password) VALUES('$username','$fname','$lname','$email','$pass')";
         $run = mysqli_query($conn,$sql);
         if($run){
-            header("Location:registration successful.php");
+
+            $_SESSION['signednow']="true";
+            header("Location:login.php");
         }
         else{
             echo "Invalid input";

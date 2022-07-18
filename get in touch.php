@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +11,17 @@
     <link rel="stylesheet" href="get in touch style.css">
 </head>
 <body>
+    <?php
+        if(isset($_SESSION['success'])){
+            unset($_SESSION['success']);
+            ?>
+            <script>
+                alert("Thanks for your Comment");
+            </script>
+            <?php
+
+        }
+    ?>
     <div class="top">
          <a href="index.php"><img src="logo.png" alt="logo"></a>
          <button> <a href="index.php">Go to Home</a></button>

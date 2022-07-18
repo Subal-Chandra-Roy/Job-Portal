@@ -9,7 +9,7 @@
     $category=$data['category'];
     $job_title=$data['job_title'];
     $job_nature=$data['job_nature'];
-    $location=$data['location'];
+    $location=$data['job_location'];
     $job_description=$data['job_description'];
     $sql = "INSERT INTO available_job_post(company_name,email,category,job_title,job_nature,job_location,job_description) VALUES('$company_name','$email','$category','$job_title','$job_nature','$location','$job_description')";
     $sql2="DELETE FROM request_for_job_post WHERE id='$id'";

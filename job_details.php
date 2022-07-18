@@ -12,4 +12,3 @@
     </head>
     <embed type="application/pdf" src="Uploads_pdf/<?php echo $data['job_description'];?>" width="100%" height="700">
 </html>
-

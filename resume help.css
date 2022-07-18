@@ -43,15 +43,16 @@ position: -webkit-sticky;
     display: flex;
 }
 .left{
-    background-color: rgb(221, 220, 220);
+    background-color: rgb(238, 238, 238);
     float: left;
     width: 40%;
     height:1350px;
     margin-right: 10px;
     padding-left: 20px;
 }
+
 .right{
-    background-color: rgb(221, 220, 220);
+    background-color: rgb(238, 238, 238);
     float: right;
     width: 60%;
     height:1200px;

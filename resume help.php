@@ -133,24 +133,24 @@
             <label for="">School Name</label>
             <input type="text" name="school_name"><br>
             <label>Start</label>
-            <input type="text" name="start1">
-            <label>End</label>
+            <input type="text" name="start1" style="margin-left:63px;">
+            <label style="margin-left:20px;">End</label>
             <input type="text" name="end1">
             <br>
             <h2>HSC</h2>
             <label for="">College Name</label>
             <input type="text" name="college_name"><br>
-            <label>Start</label>
-            <input type="text" name="start2">
-            <label>End</label>
+            <label >Start</label>
+            <input type="text" name="start2" style="margin-left:69px;">
+            <label style="margin-left:20px;">End</label>
             <input type="text" name="end2">
             <br>
             <h2>B.Sc</h2>
             <label for="">University Name</label>
             <input type="text" name="university_name"><br>
             <label>Start</label>
-            <input type="text" name="start3">
-            <label>End</label>
+            <input type="text" name="start3" style="margin-left:85px;">
+            <label style="margin-left:20px;">End</label>
             <input type="text" name="end3">
 
             <br>
@@ -159,24 +159,24 @@
             <input type="text" name="post_name">
             <label for="">Company Name</label>
             <input type="text" name="company_name"><br>
-            <label for="">Duration</label>
+            <label for="" style="margin-left:32px;">Duration</label>
             <input type="text" name="duration"><br><br>
             
             <label for="">2.Post Name</label>
             <input type="text" name="post_name2">
             <label for="">Company Name</label>
             <input type="text" name="company_name2"><br>
-            <label for="">Duration</label>
+            <label for="" style="margin-left:32px;">Duration</label>
             <input type="text" name="duration2"><br>
             <br>
             <h1>References</h1>
             <label for="">Name</label>
-            <input type="text" name="r_name">
-            <label for="">Profession</label>
+            <input type="text" name="r_name" style="margin-left:5px;">
+            <label for="" style="margin-left:20px;">Profession</label>
             <input type="text" name="pro"><br>
             <label for="">Phone</label>
             <input type="text" name="r_phone">
-            <label for="">Email</label>
+            <label for="" style="margin-left:56px;">Email</label>
             <input type="text" name="r_email"><br><br>
             <input type="submit" values="submit" name="submit" id="submit">
             </form>

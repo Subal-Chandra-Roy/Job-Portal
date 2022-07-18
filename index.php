@@ -42,7 +42,7 @@
             <li><a href="find job.php">Find Jobs</a></li>
             
             <li><a href="resume help.php">Resume Help</a></li>
-            <li><a href="#">Upload Resume</a></li>
+            <li><a href="upload resume.php">Upload Resume</a></li>
             <li><a href="career advice.php">Career Advice</a></li>
             <li><a href="post a job.php">Post a job</a></li> 
         </ul>

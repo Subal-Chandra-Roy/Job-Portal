@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +21,14 @@ session_start();
                 </script>
                 <?php 
                 unset($_SESSION['invalid']);
+            }
+            if(isset($_SESSION['signednow'])){
+                ?>
+                <script>
+                    alert("You have been signed up successfull...please log in");
+                </script>
+                <?php
+               unset($_SESSION['signednow']);
             }
         ?>
         <h1>Log in</h1>
